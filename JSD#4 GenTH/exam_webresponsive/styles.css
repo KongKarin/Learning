@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 16px 24px
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu {
+    font-size: 16px;
+    padding: 16px 16px;
+    gap: 16px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
