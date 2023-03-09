@@ -1,0 +1,48 @@
+html {
+    background-color: rgb(53, 52, 52);
+}
+
+nav {
+    width: auto;
+    height: 80px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;   
+}
+
+.login {
+    color: white;
+    font-weight: bold;
+    text-decoration-line:none;
+    margin-right: 5%;
+    background-color: black;
+    padding: 12px 40px;
+    border-radius: 20px 20px;
+}
+
+figure {
+    background-color: aqua;
+    margin: ;
+    max-width: 40%;
+    max-height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+}
+
+.signup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+h1, p {
+    color: white;
+}
