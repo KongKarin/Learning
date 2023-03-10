@@ -1,3 +1,4 @@
+/* https://www.youtube.com/watch?v=Oa9LTDR9ugU
 html {
     background-color: rgb(53, 52, 52);
 }
@@ -5,7 +6,7 @@ html {
 nav {
     width: auto;
     height: 80px;
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -25,7 +26,7 @@ nav {
 
 figure {
     background-color: aqua;
-    margin: ;
+    margin: 12px;;
     max-width: 40%;
     max-height: 40%;
     display: flex;
@@ -45,4 +46,49 @@ figure {
 
 h1, p {
     color: white;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)),url(https://images.unsplash.com/photo-1458442310124-dde6edb43d10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration-line:none;
+    margin-right: 5%;
+    background-color: black;
+    padding: 12px 40px;
+    border-radius: 20px 20px;
 }
