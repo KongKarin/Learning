@@ -1,0 +1,41 @@
+@import url('http://font.googleapis.com/css?family=Poppines: 200, 300, 400, 500, 600, 700, 800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppines', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100hv;
+    display: flex;
+}
+
+section .imgbox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgbox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg,#e91e63,#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
