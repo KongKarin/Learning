@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation form</title>
+
+    <section id="title">
+        <h1 align="center">Reservation Form</h1>
+    </section>
+    <hr color="red">
+
+</head>
+<body align="center">
+    <H3>*denotes mandotory</H3>
+    <form action="" method="get">
+        <label for="fullname">Full Name*:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="FirstName LastName" required>
+        <br>       
+        <br>
+        <label for="email">Email adress*:</label>
+        <input type="email" name="email" id="email" placeholder="Email address" required >
+        <br>
+        <br>
+        <label for="package">Select Tour Package*:</label>
+        <select name="package" id="package">
+            <option value="1d1n">1D1N</option>
+            <option value="2d2n">2D2N</option>
+            <option value="3d3n">3D3N</option>
+        </select>
+        <br>
+        <br>
+        <label for="arrival">Arrival Date*:</label>
+        <input type="date" name="arrival" id="arrival" placeholder="Date" required>
+        <br>
+        <br>
+        <label for="number">Number of Person*:</label>
+        <input type="number" name="number" id="number" min="2" max="10" pattern="0-10" placeholder="Number of Person" required>
+        <br>
+        <br>
+        <label for="avail">What would you want to avail?:</label>
+        <br>
+        Boarding<input type="checkbox" name="avail" id="avail" value="1">
+        <br>
+        Fooding<input type="checkbox" name="avail" id="avail" value="2">
+        <br>
+        Sight Seeing<input type="checkbox" name="avail" id="avail" value="3">
+        <br>
+        <br>
+        <label for="discount">Discount Coupon Code:</label>
+        <input type="text" placeholder="Discount Coupon Code">
+        <br>
+        <br>
+        <section>
+        <span id="tnd">Term and Conditions*:</span>
+        <input id="yes" type="radio" name="tnd" value="yes"> 
+        <label for="yes">I agree</label>
+	    <input id="no" type="radio" name="tnd" value="no">
+        <label for="no">I disagree</label>
+        </section>
+        <br>
+        <br>
+        <input type="submit" value="Complete Reservation">  
+    </form>
+</body>
+</html>
