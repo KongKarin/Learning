@@ -1,17 +1,17 @@
-let Car = function (make, model, year){
+let phone = function (make, model, year){
     this.make = make;
     this.model = model;
     this.year = year;
-    this.drive = function(name){
+    this.use = function(name){
         console.log(`${name} is driving car `);
     };
     
 };
 
-let myCar = new Car('Nisan', 'A123', 2003);
-console.log(myCar);
-console.log(myCar.drive('Jack'));
+// let myPhone = new phone('iPhone', '12', 2020);
+// console.log(myPhone);
+// console.log(myPhone.use('Jack'));
 
-let myCar1 = new Car('Honda', 'H435', 2010);
-    console.log(myCar1);
-    console.log(myCar1.drive('Jill'));
+// let myCar1 = new phone('Honda', 'H435', 2010);
+// console.log(myCar1);
+// console.log(myCar1.drive('Jill'));
