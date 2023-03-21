@@ -4,43 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="su.css">
+    <title>login</title>
+    <link rel="stylesheet" href="/JSD4GenTH/Project_sprint/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/4624866978.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="#"></script>
 </head>
 <body>
-    <section>
-        <div class="imgbox">
-            <img src="https://images.unsplash.com/photo-1607274134639-043342705e6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" alt="img">
+    <div class="split-screen">
+        <!-- Leff side -->
+        <div class="left">
+            <section class="copy">
+                <h1>Explore Your Potentiality </h1>
+                <h2><em>" A goal without a plan is only a dream ".</em></h2>
+                <p>Over 1000 reasons to give up, <br> but the one reason to drive we go.  </p>
+            </section>
         </div>
-
-        <div class="contentbox">
-            <div class="formbx">
-                <h2>Login</h2>
-                <p>Sign Up with google</p>
-                 <p> or login with your Email</p>
-                <form action="">
-                    <div class="inputbx">
-                        <span>Username</span>
-                        <input type="text" name="">
+        <!-- Right side -->
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2>Log In</h2>    
+                    <div class="login-container">
+                        <p>Alredy have an account? <a href="#"><strong>Log In</strong></a></p>    
                     </div>
-                    <div class="inputbx">
-                        <span>Password</span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="remember">
-                        <label><input type="checkbox">Remember</label>
-                    </div>
-                    <div class="inputbx">
-                        <input type="submit" value="Sign In" name="">
-                    </div>
-                    <div class="inputbx">
-                        <p></p>
-                    </div>
-                </form>
-            </div>
+                </section>
+                <div class="input-container name">
+                    <label for="fname">Full Name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="input-container email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Must be at least 6 characters">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="input-container password">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Must be at least 6 characters">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Sign up for email updates.
+                    </label>
+                </div>
+                <button class="sign-btn" type="submit">Sign Up</button>
+                <section class="copy legal">
+                    <p><span class="small">By continuing, you agree to accept our <br> <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.</span></p>
+                </section>
+            </form>    
         </div>
-
-    </section>
+    </div>
     
 </body>
 </html>
