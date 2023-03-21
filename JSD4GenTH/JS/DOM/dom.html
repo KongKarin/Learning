@@ -12,7 +12,7 @@
 	    		<h1 class="title">Reading List</h1>
           <p>Make your List</p>
           <form id="search-list">
-            <input type="text" placeholder="Search read list..." />
+            <input onclick="handleClickAddlist()" id="search-input" type="text" placeholder="Search read list..." />
           </form>
 	    	</div>
 	    </header>
@@ -21,27 +21,29 @@
 	    	<ul>
 	    		<li>
 	    			<span class="name">HTML & CSS</span>
-	    			<span class="delete">delete</span>
+	    			<span class="delete" onclick="handleDeleteList()" >delete</span>
 	    		</li>
 	    		<li>
 	    			<span class="name">Java Script<Script></Script></span>
-	    			<span class="delete">delete</span>
+	    			<span class="delete" onclick="handleDeleteList()" >delete</span>
 	    		</li>
 	    		<li>
 	    			<span class="name">The DOM</span>
-	    			<span class="delete">delete</span>
+	    			<span class="delete" onclick="handleDeleteList()" >delete</span>
 	    		</li>
 	    	
 	    	</ul>
 	    </div>
-	    <form id="add-list">
-	    	<input type="text" placeholder="Add reading List..." />
-	    	<button>Add</button>
-	    </form>
+	    <div id="add-list">
+	    	<input type="text" id="add-input" placeholder="Add reading List..." />
+	    	<button onclick="handleClickAddList()"> Add </button>
+            <!--  onclick="handleClickAddlist()" --> 
+	    </div>
 
     </div>
     <script src="dom.js"></script>
 	<!-- <script src="nodes.js"></script> -->
 	<!-- <script src="readingList.js"></script> -->
   </body>
+
 </html>
