@@ -1,0 +1,12 @@
+const apiKey = ''; //your API key
+const city = 'Bangkok'; // replace with the city you want to get weather data for
+​
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`) //resource that you want to fetch and then return us as the promise
+  .then(response => response.json()) //return response object
+  .then(data => {
+    console.log(data);
+    // do something with the weather data here
+  })
+  .catch(error => {
+    console.log(error);
+  });
