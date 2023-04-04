@@ -32,7 +32,8 @@ console.log(Math.floor(avr));
 
 // median
 function median(values){
-    if(values.length ===0) throw new Error("No inputs");
+    if(values.length ===0) {throw new Error("No inputs");
+    }
   
     values.sort(function(a,b){
       return a-b;
@@ -40,9 +41,9 @@ function median(values){
   
     let half = Math.floor(values.length / 2);
     
-    if (values.length % 2)
+    if (values.length % 2) {
       return values[half];
-    
+    }
     return (values[half - 1] + values[half]) / 2.0;
   }
 console.log(median(nums));
@@ -52,21 +53,40 @@ console.log(median(nums));
 // from part 1: const nums = [1, 5, 7, 9, 10, 13];
 
 // 1)create factorial function:
+// function factorialize(num) { 
+//   if (num < 0) {
+//     return -1;
+//   } else if (num == 0) {
+//     return 1;
+//   }  else {
+//     return (num * factorialize(num - 1));
+//   }
+// }
 function factorialize(num) { 
-  if (num < 0) 
-        return -1;
-  else if (num == 0) 
-      return 1;
-  else {
-      return (num * factorialize(num - 1));
+  if (num == 0) {
+    return 1;
+  } else {
+    return (num * factorialize(num - 1));
   }
 }
-
 // 2) update the factorial of each index in the array
-const arr = nums;
-const newArray = arr.map((element) => {
-  return factorialize(element);
-});
+// const arr = nums;
+// const newArray = arr.map((element) => {
+  //   return factorialize(element);
+  // });
+  
+  // GenMentor_Mart (มาร์ท)
+  // ส่วนข้อ Factorial ผมคิดว่าอาจจะลองทำความเข้าใจก่อนว่า factorial คืออะไรครับ และจริง ๆ มันสามารถเริ่มต้นได้ตั้งแต่ 0-2  ไม่ต้องดักถึงเคสติดลบ
+  //   9:14 PM
+  // และ factorial มักจะไม่คำนวณค่าลบ ดังนั้น Line นี้สามารถคัดมันออกมาแบบนี้ได้เลยครับ
+  // เดิม
+  const arr = nums;
+  // const newArray = arr.map((element) => {
+  //   return factorialize(element);
+  // });
+  
+  // จากที่ผมแนะนำตรงนี้
+  const newArray = arr.filter(element => element > 0).map(element => factorialize(element));
 
 console.log(newArray); 
 
