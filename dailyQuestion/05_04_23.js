@@ -15,6 +15,7 @@
 const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const arr2 = ['h', 'e', 'l', 'l', 'o'];
 
+//used .sort method to sort
 arr1.sort((a, b) => b - a);
 arr2.sort((a, b) => 0 - 1);
 
@@ -29,20 +30,19 @@ console.log(arr2);
 // console.log(typeof arr2);
 
 
-
 //part 2 
 const arr3 = ['l', 'i', 's', 't', 'e', 'n'];
 const arr4 = ['s', 'i', 'l', 'e', 'n', 't'];
 
+//rearrange the array
 function reArr(arr){
   return arr.sort((a,b) => a - b);
 }
- //cal function
+ //call function
 reArr(arr3)
 reArr(arr4)
 
-console.log(reArr(arr3));
-
+// compare the array
 function compare(arr3, arr4){
 if (arr3 === arr4) {
   return true;
@@ -55,13 +55,18 @@ console.log(compare(arr3, arr4)); // result is false
 
 
 //ask ChatGPT
-function compareArrays(arr3, arr4) {
-  const sortedArr1 = arr3.slice().sort().reverse();
-  const sortedArr2 = arr4.slice().sort().reverse();
-  return sortedArr1.length === sortedArr2.length && sortedArr1.every((value, index) => value === sortedArr2[index]);
-}
+// function compareArrays(arr3, arr4) {
+//   const sortedArr1 = arr3.slice().sort().reverse();
+//   const sortedArr2 = arr4.slice().sort().reverse();
+//   return sortedArr1.length === sortedArr2.length && sortedArr1.every((value, index) => value === sortedArr2[index]);
+// }
 
-console.log(compareArrays(arr3, arr4)); // output: true
+// console.log(compareArrays(arr3, arr4)); // output: true
+
+
+
+
+// part 3
 
 
 
