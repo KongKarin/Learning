@@ -39,8 +39,8 @@ function reArr(arr){
   return arr.sort((a,b) => a - b);
 }
  //call function
-reArr(arr3)
-reArr(arr4)
+reArr(arr3);
+reArr(arr4);
 
 // compare the array
 function compare(arr3, arr4){
@@ -67,6 +67,7 @@ console.log(compare(arr3, arr4)); // result is false
 
 
 // part 3
+const arr5 = ['a', 'd', 'd', 'a'];
 
 
 
