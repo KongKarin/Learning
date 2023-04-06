@@ -88,6 +88,3 @@ function factorialize(num) {
   // จากที่ผมแนะนำตรงนี้
   const newArray = arr.filter(element => element > 0).map(element => factorialize(element));
   console.log(newArray);
-
-
-
