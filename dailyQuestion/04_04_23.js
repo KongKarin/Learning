@@ -8,7 +8,7 @@
 //    For example, if n = 5, then 5! = 5 x 4 x 3 x 2 x 1 = 120. Write a program that takes an integer n as input and outputs its factorial.
 
 
-// part1
+// part 1
 //1) set arry of numbers 
         // * create sort array functions
 //2) find sum of all numbers

@@ -54,7 +54,7 @@ if (arr3 === arr4) {
 console.log(compare(arr3, arr4)); // result is false
 
 
-//ask ChatGPT
+// Ask ChatGPT
 // function compareArrays(arr3, arr4) {
 //   const sortedArr1 = arr3.slice().sort().reverse();
 //   const sortedArr2 = arr4.slice().sort().reverse();
@@ -67,9 +67,18 @@ console.log(compare(arr3, arr4)); // result is false
 
 
 // part 3
-const arr5 = ['a', 'd', 'd', 'a'];
+// ตรวจสอบ value ใน string หาค่าที่ไม่มีคู่(ไม่ซ้ำ) 
+// ถ้าเจอ 1 ตัว ให้ return true
+// ถ้าเจอ 2 ตัว ให้ return false
+// ถ้าไม่เจอให้ return true 
 
+const arr5 = ['d', 'a', 'd', 'a', 'w', 'w', 's'];
 
+function checkPalinDrome(arr) {
+
+}
+
+// ask ChatGPT
 
 
 
