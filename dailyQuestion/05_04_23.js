@@ -70,7 +70,7 @@ console.log(compare(arr3, arr4)); // result is false
 // ตรวจสอบ value ใน string หาค่าที่ไม่มีคู่(ไม่ซ้ำ) 
 // ถ้าเจอ 1 ตัว ให้ return true
 // ถ้าเจอ 2 ตัว ให้ return false
-// ถ้าไม่เจอให้ return true 
+// ถ้าไม่เจอให้ return true
 
 const arr5 = ['d', 'a', 'd', 'a', 'w', 'w', 's'];
 
