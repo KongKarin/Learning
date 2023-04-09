@@ -161,4 +161,47 @@ console.log(val1, val3);
     const mergedInfo = { ...info, ...newInfo };
     console.log(mergedInfo); // output: { name: 'Jeeb', age: 26, married: false, car: 'Lambo', color: 'red' }
     
-    //Rest
+    //Rest Parametor is making function with spread operator
+    const mergeObj = (...obj) => ( {...obj} );
+    console.log(mergeObj(info, newInfo)); 
+    // output:{
+    //     '0': { name: 'Jeeb', age: 26, married: false },
+    //     '1': { car: 'Lambo', color: 'red' }
+    //   }
+
+// Lesson 9 Classes
+    class Car {
+        constructor(brand) {
+            this.carname = brand;
+        }
+    
+        //Method
+        present() {
+            return `I have a ${this.carname}`
+        }
+
+        static hello() {
+            return 'Hello! There'
+        }
+    }
+
+    class Model extends Car {
+        constructor(brand, mod) {
+            super(brand),
+            this.model = mod;
+        }
+        
+        show() {
+            return this.present() + ', it is a ' + this.model;
+        }
+    }
+
+
+    let myCar = new Model('Ford', 'Mustang');
+    let yourCar = new Car;
+    console.log(myCar.show()); // output:)
+    console.log(Car.hello()); // output:)
+    // console.log(yourCar.hello()); // without 'static' output: 
+
+
+
