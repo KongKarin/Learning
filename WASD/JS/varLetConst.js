@@ -199,8 +199,8 @@ console.log(val1, val3);
 
     let myCar = new Model('Ford', 'Mustang');
     let yourCar = new Car;
-    console.log(myCar.show()); // output:)
-    console.log(Car.hello()); // output:)
+    console.log(myCar.show()); // output:
+    console.log(Car.hello()); // output:
     // console.log(yourCar.hello()); // without 'static' output: 
 
 
