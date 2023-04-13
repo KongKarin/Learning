@@ -160,7 +160,7 @@
 /* -------------------- Universal CSS -------------------- */
 
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -168,7 +168,8 @@
 body {
   color: var(--white-text);
   font-family: "Montserrat", sans-serif;
-
+  max-width: 1140px;
+  margin: auto;
 }
 
 /* Text Content */
