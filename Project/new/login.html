@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERGRAM LOGIN</title>
+
+    <!-- Link Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Link JavaScript -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="split-screen">
+        <!-- Leff side -->
+        <div class="left-login">
+            <div class="quote-login">
+                <h1>Explore Your Potentiality </h1>
+                <h2><em>" A goal without a plan is only a dream ".</em></h2>
+                <p>Over 1000 reasons to give up, <br> but the one reason to drive we go.  </p>
+            </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="right-login">
+            <form>
+                <div class="login-header">
+                    <h2>LOG IN</h2>
+                </div>
+                <div class="input-container username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Must be at least 6 characters" required>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="input-container-cta">
+                    <label class="checkbox-container">
+                        <nbsp>
+                        <input type="checkbox" id="checkbox">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                </div>
+                <button class="login-btn" type="submit">Log In</button>
+                <div class="copy legal">
+                    <p><span class="forgotPassword"><a href="#">Forgotten password?</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>

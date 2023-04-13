@@ -1,0 +1,325 @@
+:root {
+    /* Color Palette */
+    --bg-color: #101115;
+    --primary-color: #1a1a1b;
+    --secondary-color: #c76300;
+    --accent-color: #fa7d00;
+  
+    /* Text Color */
+    --white-text: #e8e8e8;
+    --grey-btn-color: #333333;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+  
+  /* -------------------- Utility Class -------------------- */
+  /* -------------------- Utility Class -------------------- */
+  
+  /* ----- margin ----- */
+  .m-1 {
+    margin: 8px;
+  }
+  
+  .m-2 {
+    margin: 16px;
+  }
+  
+  .m-3 {
+    margin: 24px;
+  }
+  
+  .m-4 {
+    margin: 32px;
+  }
+  
+  .m-5 {
+    margin: 48px;
+  }
+  
+  .m-6 {
+    margin: 64px;
+  }
+  
+  /* ----- padding ----- */
+  .p-1 {
+    padding: 8px;
+  }
+  
+  .p-2 {
+    padding: 16px;
+  }
+  
+  .p-3 {
+    padding: 24px;
+  }
+  
+  .p-4 {
+    padding: 32px;
+  }
+  
+  .p-5 {
+    padding: 48px;
+  }
+  
+  .p-6 {
+    padding: 64px;
+  }
+  
+  /* ----- gap ----- */
+  .g-1 {
+    gap: 8px;
+  }
+  
+  .g-2 {
+    gap: 16px;
+  }
+  
+  .g-3 {
+    gap: 24px;
+  }
+  
+  .g-4 {
+    gap: 32px;
+  }
+  
+  .g-5 {
+    gap: 48px;
+  }
+  
+  .g-6 {
+    gap: 64px;
+  }
+  
+  /* ----- width ----- */
+  .wd-100 {
+    width: 100%;
+  }
+  
+  .wd-60 {
+    width: 60%;
+  }
+  
+  .wd-50 {
+    width: 50%;
+  }
+  
+  .wd-25 {
+    width: 25%;
+  }
+  
+  /* ----- font weight ----- */
+  .font-w-700 {
+    font-weight: 700;
+  }
+  
+  /* ----- button class ----- */
+  .orange-btn {
+    background-color: var(--accent-color);
+    border: 0;
+    border-radius: 30px;
+    color: var(--white-text);
+  }
+  
+  .orange-trans-btn {
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    color: var(--accent-color);
+  }
+  
+  .other-btn {
+    background-color: var(--grey-btn-color);
+    border-radius: 10px;
+    border: 0;
+    color: var(--white-text);
+  }
+  
+  /* ----- text color ----- */
+  .white-text {
+    color: var(--white-text);
+  }
+  
+  .orange-text {
+    color: var(--accent-color);
+  }
+  
+  /* ----- radio-btn class for activity list ------ */
+  .grey-radio {
+    background-color: var(--grey-btn-color);
+    height: 80px;
+    width: 80px;
+  }
+  
+  .orange-radio {
+    background-color: var(--accent-color);
+    height: 80px;
+    width: 80px;
+  }
+  
+  /* -------------------- Universal CSS -------------------- */
+  /* -------------------- Universal CSS -------------------- */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: var(--white-text);
+    font-family: "Montserrat", sans-serif;
+  
+  }
+  
+  /* Text Content */
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* screen */
+  .split-screen {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+  }
+  
+  /* Left Part*/
+  .left-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1607274134639-043342705e6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
+    background-size: cover;
+  }
+  
+  .left-login .quote-login {
+    color: var(--white-text);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .left-login p {
+    font-weight: 400;
+  }
+  
+  /* Right Part*/
+  .right-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-text);
+    background-color: var(--bg-color);
+    text-align: center;
+    /* line-height: 1.5; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .right-login .login-header {
+    text-align: center;
+  }
+  
+  .right-login .login-header p {
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+  }
+  
+  .right-login form {
+    width: 328px;
+  }
+  
+  /* Input */
+  
+  form label {
+      display: flex;
+      margin-bottom: 0.5rem;
+      /* font-size: 0.75rem; */
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      /* border-radius default 30px */
+      border-radius: 8px;
+      border:0;
+      padding: 1em;
+      margin-bottom: 1.25rem;
+      font-size: 0.875rem;
+  }
+  
+  /* Password Hidden Icon */
+  .input-container.password {
+    position: relative;
+  }
+  .input-container.password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+    color: var(--grey-btn-color);
+  }
+  
+  /* Button */
+  .login-btn {
+    display: inline-block ;
+    width: 100%;
+    background: var(--accent-color);
+    color: var(--white-text);
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    /* border-radius default 30px */
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-top: 1rem;
+  }
+  
+  .login-btn:hover {
+    cursor: pointer;
+    scale: 1.03;
+  }
+  
+  /* Remember Checkbox */
+  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+
+
+
+
+  .forgotPassword {
+    display: block;
+    margin-top: 1rem;
+    font-size: 80%;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left-login,
+    .right-login {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+  }

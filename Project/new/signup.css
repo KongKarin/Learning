@@ -204,7 +204,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/Project/asset/lion.avif);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1607274134639-043342705e6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
   background-size: cover;
 }
 
@@ -232,11 +232,11 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.right-signup .login-header {
+.right-signup .signup-header {
   text-align: center;
 }
 
-.right-signup .login-header p {
+.right-signup .signup-header p {
   margin: 1.5em 0;
   font-size: 0.875rem;
 }
