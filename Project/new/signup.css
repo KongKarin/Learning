@@ -273,12 +273,19 @@ form select[id="gender"] {
 .input-container.password {
   position: relative;
 }
+
 .input-container.password i,
 .input-container.cpassword i  {
   position: absolute;
   top: 42px;
   right: 16px;
   color: var(--grey-btn-color);
+  cursor: pointer;
+}
+
+#show-password,
+#show-password2 {
+  display: block;
 }
 
 /* Button */

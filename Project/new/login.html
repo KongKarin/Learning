@@ -18,6 +18,7 @@
 
     <!-- Link JavaScript -->
     <script src="index.js"></script>
+
 </head>
 
 <body>
@@ -44,23 +45,45 @@
                 <div class="input-container password">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="Must be at least 6 characters" required>
-                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-eye-slash" id="hide-password"></i>
+                    <i class="fa-solid fa-eye" id="show-password"></i>
                 </div>
                 <div class="input-container-cta">
                     <label class="checkbox-container">
                         <nbsp>
-                        <input type="checkbox" id="checkbox">
-                        <span class="checkmark"></span>
-                        Remember me
+                            <input type="checkbox" id="checkbox">
+                            <span class="checkmark"></span>
+                            Remember me
                     </label>
                 </div>
-                <button class="login-btn" type="submit">Log In</button>
+                    <button class="login-btn" type="submit">Log In</button>
                 <div class="copy legal">
-                    <p><span class="forgotPassword"><a href="#">Forgotten password?</a></span></p>
+                        <p><span class="forgotPassword"><a href="#">Forgotten password?</a></span></p>
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        let eyeicon = document.getElementById("show-password");
+        let eyeicon2 = document.getElementById("hide-password");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon.style.disply = "block";
+                eyeicon2.style.display = "none";
+            } else { 
+                password.type = "password";
+                eyeicon.style.disply = "none";
+                eyeicon2.style.display = "block";
+            }
+        }
+
+    </script>
+
+    
 </body>
 
 
