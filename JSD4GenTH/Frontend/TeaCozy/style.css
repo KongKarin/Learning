@@ -1,0 +1,40 @@
+html {
+    background-color: black;
+    font-size: 22px;
+    color: seashell;
+    font-family: Helvetica;
+    opacity: 0.9;
+    max-width: 1140px;
+    margin: auto;
+}
+  
+.main > nav {
+    border-bottom: 1px solid seashell;
+    padding: 0 10px; 
+    width: 1120px;
+    max-width: 1120px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.main > nav > img {
+    height: 50px;
+}
+
+.nav-list > a {
+    text-decoration: underline;
+    color: seashell;
+}
+
+.our-mission {
+    height: 700px;
+    width: 1000px;
+}
+
+.our-mission > img {
+    height: 700px;
+    width: 1000px;
+}
