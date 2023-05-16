@@ -5,7 +5,7 @@ const users = [
     }
 ];
 
-const publicPost = [
+const publicPosts = [
     {
         title: "Free Tips on Development",
         content: "These are some tips"
@@ -22,21 +22,21 @@ const publicPost = [
 
 const privatePosts = [
     {
-        title: "Free Tips on Development",
+        title: "Paid Tips on Development",
         content: "These are some tips"
     },
     {
-        title: "Free Tips on Development",
+        title: "Paid Tips on Development",
         content: "These are some tips"
     },
     {
-        title: "Free Tips on Development",
+        title: "Paid Tips on Development",
         content: "These are some tips"
     }
 ]
 
 module.exports = { 
     users,
-    publicPost,
+    publicPosts,
     privatePosts
 }

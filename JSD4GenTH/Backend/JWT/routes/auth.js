@@ -18,7 +18,7 @@ router.post('/signup', [
     const errors = validationResult(req);
 
     if(!errors.isEmpty()) {
-        return res.status(400).json({
+        return res.status(422).json({
             errors: errors.array()
         })
     };
@@ -29,7 +29,7 @@ router.post('/signup', [
     });
 
     if(user){
-        return res.status(400).json({
+        return res.status(422).json({
             errors: [
                 {
                     msg: "This user already exists"
@@ -65,7 +65,7 @@ router.post('/login', async (req, res) => {
     });
     
     if(!user){
-        return res.status(400).json({
+        return res.status(422).json({
             errors: [
                 {
                     msg: "Invalid Credentials",
@@ -77,7 +77,7 @@ router.post('/login', async (req, res) => {
     let isMatch = await bcrypt.compare(password, user.password);
 
     if(!isMatch){
-        return res.status(400).json({
+        return res.status(404).json({
             errors: [
                 {
                     msg: "Invalid Credentials",
@@ -86,11 +86,7 @@ router.post('/login', async (req, res) => {
         })
     };
 
-    const token = await JWT.sign({
-        email
-    }, "lkij213h234gui2h34kjhkj5436uasd9", {
-        expiresIn: 36000
-    });
+    const token = await JWT.sign({email}, "lkij213h234gui2h34kjhkj5436uasd9", {expiresIn: 36000})
 
     res.json({
         token
