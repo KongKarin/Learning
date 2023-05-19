@@ -45,16 +45,21 @@ router.post('/signup', [
         password: hashedPassword
     });
 
-    // must store it in .env file
-    const token = await JWT.sign({
-        email
-    }, "lkij213h234gui2h34kjhkj5436uasd9", {
-        expiresIn: 36000
-    });
+    // relate .env
+    // const token = await JWT.sign({
+    //     email
+    // }, "lkij213h234gui2h34kjhkj5436uasd9", {
+    //     expiresIn: 36000
+    // });
 
-    res.json({
-        token
-    });
+    // res.json({
+    //     token
+    // });
+    res.status(422).json(
+        {
+           message: "Signup successful" 
+        }
+    );
 });
 
 router.post('/login', async (req, res) => {
